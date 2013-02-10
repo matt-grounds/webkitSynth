@@ -1,0 +1,196 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+#demo {
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+
+.window {
+    border:1px solid #346789;
+    box-shadow: 2px 2px 19px #aaa;
+    -o-box-shadow: 2px 2px 19px #aaa;
+    -webkit-box-shadow: 2px 2px 19px #aaa;
+    -moz-box-shadow: 2px 2px 19px #aaa;
+    -moz-border-radius:0.5em;
+    border-radius:0.5em;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    /*width:6em; height:6em;*/
+    /*line-height:6em;*/
+    text-align:center;
+    z-index:20;
+    position:absolute;
+    background-color:#eeeeef;
+    color:black;
+    font-family:helvetica;
+    /*padding: 1em 1em 3em 1em;*/
+    font-size:0.9em;
+}
+.window:hover {
+    box-shadow: 2px 2px 19px #444;
+   -o-box-shadow: 2px 2px 19px #444;
+   -webkit-box-shadow: 2px 2px 19px #444;
+   -moz-box-shadow: 2px 2px 19px #444;
+}
+
+._jsPlumb_connector { z-index:4; }
+._jsPlumb_endpoint, .endpointTargetLabel, .endpointSourceLabel{ z-index:21;cursor:pointer; }
+.hl { border:3px solid red; }
+#debug { position:absolute; background-color:black; color:red; z-index:5000 }
+
+#piano { top: -7em; }
+
+.aLabel {
+ 	background-color:white; 
+	padding:0.4em; 
+	font:12px sans-serif; 
+	color:#444;
+	z-index:21;
+	border:1px dotted gray;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+.tooltip {
+	border: 1px solid blue;
+	border-radius: 10px;
+	padding: 10px;
+	display: none;
+	z-index: 1000;
+	background-color: white;
+}
+
+.tooltip.input {
+	width: 375px;
+}
+
+.lefty {
+	float: left;
+}
+.righty {
+	float: right;
+}
+
+.inline {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.Oscillator, .OscillatorGain {
+	border-color: orange;
+}
+
+.tooltip.OscillatorGain ul {
+	list-style: none!important;
+	padding: 0;
+	padding-left: 15px;
+}
+
+.BiquadFilterNode {
+	border-color: red;
+}
+
+.AudioDestinationNode {
+	border-color: green;
+}
+
+.tooltip.Oscillators .slides_container {
+  position:relative;
+  overflow:hidden;
+  width: 375px;
+  height:200px;
+}
+
+
+.slides_container .items {
+  /* this cannot be too large */
+  width:20000em;
+  position:absolute;
+}
+ 
+/*
+a single item. must be floated in horizontal scrolling.  typically,
+this element is the one that *you* will style the most.
+*/
+.items div {
+  float:left;
+}
+
+
+.menuitem {
+	border: 1px solid #776666;
+	background:#ffcccc;
+	cursor:default;
+	padding: 0.5em;
+}
+
+.menuitem:hover {
+	background:#bbbbbb;
+}
+
+.closebutton{
+    float:right;
+	margin:2px;
+    width:16px;
+    height:16px;
+}
+
+.expandbutton{
+	margin:2px;
+    width:16px;
+    height:16px;
+}
+
+.togglebutton{
+	margin:2px;
+    width:16px;
+    height:16px;
+}
+
+.nodeNameContainer{
+	padding: 2em 2em 2em 2em;
+}
+
+input.vertical {
+	-webkit-appearance: slider-vertical;
+    width: 20px;
+    height: 100px;
+}
+
+.slider div{
+	width: 175px;
+	margin: 0 10px;
+}
+
+.slider_container {
+	margin: 20px 0;
+}
+
+.slider_container.vertical {
+	margin: 0;
+}
+
+.slider_container.vertical div {
+	margin-top: none;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	vertical-align: top;
+}
+
+#menu {
+	width: 13em;
+	z-index: 9000;
+}

@@ -1,0 +1,11 @@
+/* These define css sprites generated with Knobman.
+*/
+.circle{
+	background-image: url(images/knobs_circle.png);
+}
+
+/* The rest of these are just to get knobs to be nicely centered.
+*/
+ .rot-knob-base{
+	margin: 0 auto;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>WebKit Audio Synthesizer Demo</title>
+		<link rel="stylesheet" href="synth.css">
+	</head>
+	<body onunload="jsPlumb.unload();" data-demo-id="flowchartConnectorsDemo" data-library="jquery" onclick="clearMenu()" onmouseup="showMenu(event)" oncontextmenu="return false;">
+
+		<div>
+		  <div id="demo">
+		  </div>
+			
+		  <div id="explanation">
+			<ul>
+			<li>Drag new audio connections from small green dots to large green dots.</li>
+			<li>Drag new control connections from small blue dots to large blue dots.</li>
+			<li>Hover over connections to highlight them, click to delete.</li>
+			<li>You can also drag connections from large dots onto other large dots.</li>   
+			<li>Use the QWERTY keys to play a major scale!</li>         
+			</ul>
+			<a id="board-save">Save me this madness</a>
+		  </div>
+
+		  <ul id="menu" style="display: none">
+			<li>
+				<a href="#">Create</a>
+				<ul id="createmenu">
+				</ul>
+			</li>
+		  </ul>
+		</div>
+
+		<script type="text/javascript" src="synthlibs.js"></script>
+		<script type="text/javascript" src="synth.js"></script>
+	</body>
+</html>
