@@ -2,7 +2,7 @@ JS_LIBS = dependencies/jquery-1.8.2.min.js \
           dependencies/jquery.json-2.3.min.js \
 		  dependencies/jquery-ui-1.9.0.custom.min.js \
 		  dependencies/jquery.jsPlumb-1.3.16-all-min.js \
-		  dependencies/knobRot-0.2.2.min.js
+		  dependencies/knobRot-0.2.2-modified.js
 
 JS_SRC = src/js/board/synthboard.js \
          src/js/board/audiocomponentview.js \

@@ -538,7 +538,8 @@ function makeKnob(options) {
 	// parent, name, min, max, initial, updateFunc
 	
 	var knobInput = $("<input type='text' size='4' autocomplete='off'>");
-	knobInput.attr('value', options.initial)
+	knobInput.attr('value', options.initial);
+	knobInput.addClass('knobInputClass');
 	options.parent.append(knobInput);
 	knobInput.knobRot({
 		'classes': ['circle'],
@@ -665,4 +666,6 @@ $(function() {
     // dynamically associate tooltips to windows
     $("#demo").on("hover", ".window.tooltipped", attach_tooltip);
 
+	// update knobs every 50 ms
+	setInterval( function() { $('.knobInputClass').trigger('globalKnobRotAnimationEvent');	}, 50);
 });

@@ -33,7 +33,7 @@ $.extend(GainNode.prototype, {
 			'min': -50.0,
 			'max': 12.0,
 			'initial': 0.0,
-			'updateFunc': function(val) { self.gain.linearRampToValueAtTime(Math.pow(10.0, val/10.0), later(0.01)); },
+			'updateFunc': function(val) { self.gain.linearRampToValueAtTime(Math.pow(10.0, val/10.0), later(0.05)); },
 		});
 	},
 
